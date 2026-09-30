@@ -149,7 +149,7 @@ export default function OverviewWindow({ onOpenWindow }) {
             <div style={{ fontWeight: 'bold', color: '#000080', fontSize: '14px', marginBottom: '4px' }}>
               1. 사역 쇼케이스 (연구 성과발표)
             </div>
-            <p style={{ fontSize: '12px', color: '#333', leadingHeight: '1.5' }}>
+            <p style={{ fontSize: '12px', color: '#333', lineHeight: '1.5' }}>
               AI연구모임이 그동안 연구하고 실험한 AI활용 사례와 프로토타입을 소개합니다. 교회의 새로운 가능성을 함께 나눕니다.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function OverviewWindow({ onOpenWindow }) {
             <div style={{ fontWeight: 'bold', color: '#008000', fontSize: '14px', marginBottom: '4px' }}>
               2. 아이디어 톤 (개인 / 부서 발표)
             </div>
-            <p style={{ fontSize: '12px', color: '#333', leadingHeight: '1.5' }}>
+            <p style={{ fontSize: '12px', color: '#333', lineHeight: '1.5' }}>
               교회 내 실제 필요와 문제를 AI로 해결할 수 있는 아이디어를 제안하고 행사 당일 각 부문별로 발표를 진행합니다.
             </p>
           </div>
