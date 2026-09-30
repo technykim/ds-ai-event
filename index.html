@@ -3,29 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#3d6a4b" />
-    <meta name="description" content="당근교회지는 소속 교구의 이웃들과 신뢰를 기반으로 육아용품, 도서 등을 간편하게 무료 나눔하고 1:1 채팅으로 거래할 수 있는 교회 공동체 중고 물건 나눔 서비스입니다." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#008080" />
+    <meta name="title" content="제1회 AI활용 아이디어 경진대회 | 동숭교회 AI 아이디어톤" />
+    <meta name="description" content="당신의 생각이 교회를 넘어 이웃에게까지 이어질 수 있습니다. 동숭교회 제1회 AI활용 아이디어 경진대회 (10월 25일 마당 및 엘림)" />
     
-    <!-- PWA Link -->
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <!-- OpenGraph SEO -->
+    <meta property="og:title" content="제1회 AI활용 아이디어 경진대회 | 동숭교회" />
+    <meta property="og:description" content="당신의 생각이 교회를 넘어 이웃에게까지 이어질 수 있습니다. 10월 25일 12:30~15:00" />
+    <meta property="og:image" content="/poster.jpg" />
     
-    <title>당근교회지 | 교회 공동체 중고 물건 나눔</title>
+    <!-- Fonts: Retro DungGeunMo & VT323 & Pretendard -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dunggeunmo/dunggeunmo-font@latest/dunggeunmo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>제1회 AI활용 아이디어 경진대회 | 동숭교회 (Windows 95 Edition)</title>
   </head>
-  <body>
+  <body class="win95-body">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    
-    <!-- PWA Service Worker Registration -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((reg) => console.log('서비스 워커 등록 성공:', reg.scope))
-            .catch((err) => console.log('서비스 워커 등록 실패:', err));
-        });
-      }
-    </script>
   </body>
 </html>
