@@ -29,9 +29,7 @@ export default function Overview() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', marginTop: '48px' }}>
-          <div style={{ gridColumn: '1 / -1', marginBottom: '16px', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
-            <img src="/church2.jpg" alt="동숭교회 전경" style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }} />
-          </div>
+
 
           {/* 3 Posters */}
           <div style={{ gridColumn: '1 / -1', marginBottom: '32px' }}>
