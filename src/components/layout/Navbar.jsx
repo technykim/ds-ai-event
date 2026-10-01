@@ -12,6 +12,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: '모임 소개', href: '#about' },
     { name: '행사 안내', href: '#overview' },
     { name: '일정 및 부문', href: '#schedule' },
     { name: '시상 및 가산점', href: '#prizes' },
