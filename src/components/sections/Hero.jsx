@@ -11,7 +11,10 @@ export default function Hero() {
         alignItems: 'center',
         paddingTop: '80px',
         overflow: 'hidden',
-        background: 'radial-gradient(circle at top right, rgba(0, 188, 212, 0.1), transparent 40%), radial-gradient(circle at bottom left, rgba(15, 76, 129, 0.1), transparent 40%)'
+        background: `linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 100%), url('/church1.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
       }}
     >
       {/* Decorative Elements */}
