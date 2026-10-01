@@ -4,7 +4,7 @@ import { Clock, BookOpen, Presentation, Award } from 'lucide-react';
 export default function Schedule() {
   const schedule = [
     { time: '12:30 - 13:30', title: '쇼케이스 전시 및 참가자 등록', desc: '장소: 천사의뜰', icon: <Clock /> },
-    { time: '13:30 - 14:30', title: '아이디어톤 발표회', desc: '팀별 발표 및 질의응답', icon: <Presentation /> },
+    { time: '13:30 - 14:30', title: '아이디어톤 발표회', desc: '장소: 엘림홀 (팀별 발표 및 질의응답)', icon: <Presentation /> },
     { time: '14:30 - 15:00', title: '심사 및 시상식', desc: '결과 발표 및 상품 수여', icon: <Award /> }
   ];
 
