@@ -41,7 +41,7 @@ export default function Hero() {
           
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '48px' }}>
             <a href="#submit" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1.125rem' }}>
-              산출물 제출하기 <ArrowRight size={20} />
+              참가 신청하기 <ArrowRight size={20} />
             </a>
             <a href="#schedule" className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '1.125rem' }}>
               행사 일정 보기

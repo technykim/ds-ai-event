@@ -58,7 +58,7 @@ export default function Navbar() {
             </a>
           ))}
           <a href="#submit" className="btn btn-primary" style={{ padding: '8px 20px' }}>
-            산출물 제출
+            참가 신청
           </a>
         </div>
       </div>

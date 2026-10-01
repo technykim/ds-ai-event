@@ -17,7 +17,7 @@ export default function Footer() {
           <a href="#overview" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>행사 안내</a>
           <a href="#schedule" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>일정 안내</a>
           <a href="#prizes" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>시상 및 가산점</a>
-          <a href="#submit" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>산출물 제출</a>
+          <a href="#submit" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>참가 신청 및 산출물 제출</a>
           <a href="#faq" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>문의 및 FAQ</a>
         </div>
         
