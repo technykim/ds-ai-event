@@ -61,7 +61,7 @@ export default function FaqContact() {
               <Mail size={24} />
             </div>
             <h4 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '8px' }}>이메일 문의</h4>
-            <a href="mailto:admin@dongsung.org" style={{ color: 'var(--color-text-muted)' }}>admin@dongsung.org</a>
+            <a href="mailto:dscaiteam@proton.me" style={{ color: 'var(--color-text-muted)' }}>dscaiteam@proton.me</a>
           </div>
           
           <div className="glass-card" style={{ flex: 1, minWidth: '250px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '32px' }}>
@@ -69,7 +69,7 @@ export default function FaqContact() {
               <Phone size={24} />
             </div>
             <h4 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '8px' }}>전화 문의</h4>
-            <span style={{ color: 'var(--color-text-muted)' }}>010-0000-0000 (김유빈 간사)</span>
+            <span style={{ color: 'var(--color-text-muted)' }}>010-4798-6938 (김택훈 집사)</span>
           </div>
         </div>
       </div>

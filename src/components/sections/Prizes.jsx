@@ -17,32 +17,14 @@ export default function Prizes() {
           참가자들을 위한 풍성한 혜택과 시상 내역, 그리고 심사 기준을 소개합니다.
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '64px' }}>
-          <div className="glass-card" style={{ textAlign: 'center', borderTop: '4px solid #FFD700' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '64px' }}>
+          <div className="glass-card" style={{ textAlign: 'center', borderTop: '4px solid #FFD700', width: '100%', maxWidth: '400px' }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px', color: '#FFD700' }}>
               <Trophy size={48} />
             </div>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>대상</h3>
-            <p style={{ color: 'var(--color-text-muted)', marginBottom: '16px' }}>부문 통합 1팀</p>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-primary)' }}>상금 50만원</div>
-          </div>
-          
-          <div className="glass-card" style={{ textAlign: 'center', borderTop: '4px solid #C0C0C0' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px', color: '#C0C0C0' }}>
-              <Medal size={48} />
-            </div>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>최우수상</h3>
-            <p style={{ color: 'var(--color-text-muted)', marginBottom: '16px' }}>부문별 각 1팀</p>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-primary)' }}>상금 30만원</div>
-          </div>
-          
-          <div className="glass-card" style={{ textAlign: 'center', borderTop: '4px solid #CD7F32' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px', color: '#CD7F32' }}>
-              <Star size={48} />
-            </div>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>우수상</h3>
-            <p style={{ color: 'var(--color-text-muted)', marginBottom: '16px' }}>부문별 각 2팀</p>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-primary)' }}>상금 15만원</div>
+            <p style={{ color: 'var(--color-text-muted)', marginBottom: '16px' }}>개인/부서(팀) 각 1팀</p>
+            <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)' }}>6개월 AI구독료 지원</div>
           </div>
         </div>
 

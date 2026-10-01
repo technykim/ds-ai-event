@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
         <div style={{ textAlign: 'center' }}>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary-dark)', marginBottom: '8px' }}>
-            제1회 동숭교회 AI활용 아이디어 경진대회
+            제1회 동숭교회 AI활용 아이디어톤
           </h3>
           <p style={{ color: 'var(--color-text-muted)' }}>
             교회의 사역과 성도의 필요를 해결하는 혁신적인 아이디어

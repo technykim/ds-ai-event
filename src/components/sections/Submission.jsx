@@ -22,7 +22,7 @@ export default function Submission() {
     const subject = `[아이디어톤] ${typeStr} - ${formData.title} 제출`;
     const body = `이름(팀명): ${formData.name}\n소속 부서: ${formData.department}\n참여 부문: ${typeStr}\n\n아이디어 제목: ${formData.title}\n\n아이디어 요약:\n${formData.desc}\n\n사용/활용 예정인 AI 툴:\n${formData.aiTools}\n\n(여기에 세부 설명이나 링크를 추가해주세요)`;
     
-    const mailtoLink = `mailto:admin@dongsung.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:dscaiteam@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   };
 

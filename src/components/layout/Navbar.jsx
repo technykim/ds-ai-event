@@ -43,7 +43,7 @@ export default function Navbar() {
             AI
           </div>
           <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.25rem' }}>
-            동숭교회 아이디어톤
+            동숭교회 AI활용 아이디어톤
           </span>
         </a>
 

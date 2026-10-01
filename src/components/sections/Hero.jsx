@@ -22,13 +22,13 @@ export default function Hero() {
         <div style={{ maxWidth: '800px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(15, 76, 129, 0.1)', borderRadius: '9999px', color: 'var(--color-primary)', fontWeight: 600, fontSize: '0.875rem', marginBottom: '24px' }}>
             <span style={{ width: '8px', height: '8px', background: 'var(--color-secondary)', borderRadius: '50%', display: 'inline-block' }}></span>
-            2026 동숭교회 AI Ideathon
+            2026 동숭교회 AI활용 아이디어톤
           </div>
           
-          <h1 style={{ fontSize: '4rem', fontWeight: 800, color: 'var(--color-primary-dark)', marginBottom: '24px', letterSpacing: '-0.02em' }}>
-            제1회 동숭교회<br />
+          <h1 style={{ fontSize: '4.5rem', fontWeight: 800, color: 'var(--color-primary-dark)', marginBottom: '24px', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+            <span style={{ fontSize: '2.5rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>제1회 동숭교회</span><br />
             <span style={{ background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              AI활용 아이디어 경진대회
+              AI활용 아이디어톤
             </span>
           </h1>
           
@@ -62,7 +62,7 @@ export default function Hero() {
               </div>
               <div>
                 <div style={{ fontWeight: 700 }}>대회 장소</div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>동숭교회 전관</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>동숭교회 엘림홀</div>
               </div>
             </div>
           </div>
