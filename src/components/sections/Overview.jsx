@@ -32,6 +32,21 @@ export default function Overview() {
           <div style={{ gridColumn: '1 / -1', marginBottom: '16px', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
             <img src="/church2.jpg" alt="동숭교회 전경" style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }} />
           </div>
+
+          {/* 3 Posters */}
+          <div style={{ gridColumn: '1 / -1', marginBottom: '32px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+              <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-md)', background: '#fff' }}>
+                <img src="/poster1.jpg" alt="포스터 1" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              </div>
+              <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-md)', background: '#fff' }}>
+                <img src="/poster2.jpg" alt="포스터 2" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              </div>
+              <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-md)', background: '#fff' }}>
+                <img src="/poster3.jpg" alt="포스터 3" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              </div>
+            </div>
+          </div>
           {features.map((feature, index) => (
             <div key={index} className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
               <div style={{ 
