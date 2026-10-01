@@ -35,7 +35,7 @@ export default function Navbar() {
     >
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '80px' }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: scrolled ? 'var(--color-primary-dark)' : 'var(--color-text-main)' }}>
-          <img src="/logo.png" alt="동숭교회 로고" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
+          <img src="/logo.png" alt="동숭교회 로고" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
           <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.25rem' }}>
             동숭교회 AI활용 아이디어톤
           </span>
