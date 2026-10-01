@@ -24,7 +24,7 @@ export default function Footer() {
         <div style={{ width: '100%', height: '1px', background: 'var(--color-border)' }}></div>
         
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>
-          © 2026 동숭교회 AI 아이디어톤 운영위원회. All rights reserved.
+          © 2026 동숭교회 AI연구모임 AI 아이디어톤 운영위원회. All rights reserved.
         </p>
       </div>
     </footer>
