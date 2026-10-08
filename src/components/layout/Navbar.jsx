@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,22 +30,33 @@ export default function Navbar() {
         right: 0,
         zIndex: 1000,
         transition: 'var(--transition-normal)',
-        background: scrolled ? 'var(--glass-bg)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent',
-        boxShadow: scrolled ? 'var(--shadow-sm)' : 'none',
+        background: scrolled || isMobileMenuOpen ? 'var(--glass-bg)' : 'transparent',
+        backdropFilter: scrolled || isMobileMenuOpen ? 'blur(12px)' : 'none',
+        borderBottom: scrolled || isMobileMenuOpen ? '1px solid var(--glass-border)' : '1px solid transparent',
+        boxShadow: scrolled || isMobileMenuOpen ? 'var(--shadow-sm)' : 'none',
       }}
     >
+      <style>{`
+        .desktop-menu { display: flex; }
+        .mobile-menu-btn { display: none; }
+        .mobile-menu { display: none; }
+        
+        @media (max-width: 900px) {
+          .desktop-menu { display: none !important; }
+          .mobile-menu-btn { display: block !important; }
+          .navbar-title { display: none !important; }
+        }
+      `}</style>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '80px' }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: scrolled ? 'var(--color-primary-dark)' : 'var(--color-text-main)' }}>
           <img src="/logo.png" alt="동숭교회 로고" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.25rem' }}>
+          <span className="navbar-title" style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.25rem' }}>
             동숭교회 AI활용 아이디어톤
           </span>
         </a>
 
         {/* Desktop Menu */}
-        <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
+        <div className="desktop-menu" style={{ gap: '32px', alignItems: 'center' }}>
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -62,7 +75,59 @@ export default function Navbar() {
             참가 신청
           </a>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="mobile-menu-btn"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-primary-dark)' }}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div style={{
+          position: 'absolute',
+          top: '80px',
+          left: 0,
+          right: 0,
+          background: 'var(--color-bg-main)',
+          padding: '24px',
+          boxShadow: 'var(--shadow-md)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          borderBottom: '1px solid var(--color-border)'
+        }}>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontWeight: 600,
+                fontSize: '1.125rem',
+                color: 'var(--color-text-main)',
+                padding: '8px 0',
+                borderBottom: '1px solid var(--color-border)'
+              }}
+            >
+              {link.name}
+            </a>
+          ))}
+          <a 
+            href="#submit" 
+            className="btn btn-primary" 
+            style={{ padding: '12px', marginTop: '8px', textAlign: 'center' }}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            참가 신청
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
