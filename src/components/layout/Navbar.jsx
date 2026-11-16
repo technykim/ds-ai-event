@@ -72,7 +72,15 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a href="#submit" className="btn btn-primary" style={{ padding: '8px 20px' }}>
+          <a
+            href="#submit"
+            className="btn btn-primary"
+            style={{ padding: '8px 20px' }}
+            onClick={(e) => {
+              e.preventDefault();
+              alert('행사가 종료되었습니다.');
+            }}
+          >
             참가 신청
           </a>
         </div>
@@ -123,7 +131,11 @@ export default function Navbar() {
             href="#submit"
             className="btn btn-primary"
             style={{ padding: '12px', marginTop: '8px', textAlign: 'center' }}
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
+              alert('행사가 종료되었습니다.');
+            }}
           >
             참가 신청
           </a>

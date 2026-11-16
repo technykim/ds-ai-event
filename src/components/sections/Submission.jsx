@@ -32,9 +32,11 @@ export default function Submission() {
               </div>
 
               <a 
-                href="https://form.typeform.com/to/jeo0Y0No" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert('행사가 종료되었습니다.');
+                }}
                 className="btn btn-primary" 
                 style={{ padding: '16px', fontSize: '1.125rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', marginTop: 'auto' }}
               >

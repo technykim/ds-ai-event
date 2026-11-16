@@ -40,7 +40,15 @@ export default function Hero() {
           </p>
           
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '48px' }}>
-            <a href="#submit" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1.125rem' }}>
+            <a
+              href="#submit"
+              className="btn btn-primary"
+              style={{ padding: '16px 32px', fontSize: '1.125rem' }}
+              onClick={(e) => {
+                e.preventDefault();
+                alert('행사가 종료되었습니다.');
+              }}
+            >
               참가 신청하기 <ArrowRight size={20} />
             </a>
             <a href="#schedule" className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '1.125rem' }}>
