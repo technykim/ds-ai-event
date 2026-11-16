@@ -14,6 +14,7 @@ export default function Footer() {
         </div>
         
         <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <a href="#results" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>행사 결과</a>
           <a href="#about" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>모임 소개</a>
           <a href="#overview" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>행사 안내</a>
           <a href="#schedule" style={{ color: 'var(--color-text-muted)', fontWeight: 500 }}>일정 안내</a>

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
+import Results from './components/sections/Results';
 import About from './components/sections/About';
 import Overview from './components/sections/Overview';
 import Schedule from './components/sections/Schedule';
@@ -18,6 +19,7 @@ export default function App() {
         <Navbar />
         <main style={{ flex: 1 }}>
           <Hero />
+          <Results />
           <About />
           <Overview />
           <Schedule />

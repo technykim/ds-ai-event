@@ -14,6 +14,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: '행사 결과', href: '#results' },
     { name: '모임 소개', href: '#about' },
     { name: '행사 안내', href: '#overview' },
     { name: '일정 및 부문', href: '#schedule' },
@@ -56,7 +57,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="desktop-menu" style={{ gap: '32px', alignItems: 'center' }}>
+        <div className="desktop-menu" style={{ gap: '24px', alignItems: 'center' }}>
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -77,7 +78,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="mobile-menu-btn"
           style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-primary-dark)' }}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -118,9 +119,9 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a 
-            href="#submit" 
-            className="btn btn-primary" 
+          <a
+            href="#submit"
+            className="btn btn-primary"
             style={{ padding: '12px', marginTop: '8px', textAlign: 'center' }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
