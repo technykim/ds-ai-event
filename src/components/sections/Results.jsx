@@ -34,7 +34,6 @@ export default function Results() {
 
   const entries = [
     {
-      no: 1,
       name: '김우현',
       dept: '1교구 7구역',
       title: '동숭 주보 다시 읽기',
@@ -42,21 +41,12 @@ export default function Results() {
       award: '2등',
     },
     {
-      no: 2,
       name: '박창규',
       dept: '1교구/안수집사회',
       title: '게시판(DID) 관리 시스템',
       summary: '디지털 게시판 관리 시스템 (전산화)\n1) 적용범위 : 교회 내,외부 홍보용 게시판, 프랜카드 포함\n2) TYPE : 터치 판넬, 키오스크 등 (EX. DID 디지털 인포메이션 디스플레이)',
     },
     {
-      no: 3,
-      name: '김경윤',
-      dept: '1교구/일대일양육팀/발사랑전도팀/5남선교회',
-      title: '믿음의 길 (Faith Path) - 나의 신앙 여정을 따라가는 서비스',
-      summary: '“나의 믿음은 어디까지 자랐을까?” 나의 신앙 여정을 한눈에 확인하고, 아직 경험하지 못한 프로그램의 배움과 섬김의 기회를 발견하는 서비스',
-    },
-    {
-      no: 4,
       name: '고광현',
       dept: '1교구',
       title: '귀가 어두우신 어르신들과 청각 장애우들을 위한 설교말씀 실시간 자막생성',
@@ -64,49 +54,43 @@ export default function Results() {
       award: '1등',
     },
     {
-      no: 5,
       name: '이성실',
       dept: '교역자',
       title: '동숭의 숲: 어린이부 공과 퀴즈 및 요절 녹음 앱',
       summary: '어린이부서 공과공부 복습퀴즈 및 구절 녹음으로 양 캐릭터 성장시키는 앱',
     },
     {
-      no: 6,
       name: '김택훈',
       dept: '동숭교회AI연구모임/통일선교부/4남선교회',
       title: '당근! 동숭교회지!',
+      url: 'https://ds-ai-sharing.verycloud.app/',
       summary: '교회의 규모가 커짐에 따라 숫자는 많아져서, 성도간의 서로 친교, 교제, 소통을 증진시키는 커뮤니티 기능을 활성화 하고자 함. 기본적으로 당근마켓과 거의 유사하나 참여자는 동숭교회 교인 커뮤니티로 한정함.',
     },
     {
-      no: 7,
       name: '정주신',
       dept: '2교구',
       title: '말씀에서 삶으로 : 목사님 설교 RAG 기반의 차세대 교회 통합 LMS',
       summary: '주일 설교 빅데이터를 RAG 기술로 재구조화하여 주일의 은혜를 일주일(168시간)의 삶으로 확장하는 차세대 교회 통합 양육 플랫폼입니다. 목사님의 설교를 학습한 AI가 성도에게는 맞춤형 5일 묵상 가이드와 챗봇, 숏폼 QT를 제공하여 일상 속 영적 성장을 이끌어 줍니다. 동시에 사역자에게는 연간 절기와 설교 주제에 맞춘 찬양·성가대 콘티 자동 구성, 위기 감지 기반의 목양 알림을 지원합니다. 철저한 신학적 가드레일 아래 설교 한 편으로 성도 양육과 예배 기획을 하나로 묶어주는 독창적인 목회 생태계 구축안입니다.',
     },
     {
-      no: 8,
       name: '마진수',
       dept: '청장년부',
       title: '동숭교회 건물안내',
       summary: '동숭교회 건물안내 앱입니다. 교회 건물을 둘러보거나 공간 이름(예: 하늘소리)을 검색하면 위치를 알려줍니다.',
     },
     {
-      no: 9,
       name: '이병렬',
       dept: '5남/청장년부/QT팀/로고스문학회',
       title: '봉사하고 친교하자!',
       summary: '1. 모두가 각자 자기만의 방식으로 봉사 할 수 있는 기회를 제공한다.\n2. 새로운 분들을 따뜻하게 모두가 가족처럼 친구처럼 함께 맞이한다.',
     },
     {
-      no: 10,
       name: '이성실',
       dept: '교역자',
       title: '너를 위한 기도: 자녀를 위한 기도 앱',
       summary: '너를 위한 기도: 부모가 자녀를 위한 기도 녹음 앱으로 자동으로 개인 드라이브에 저장',
     },
     {
-      no: 11,
       name: '이성실',
       dept: '교역자',
       title: '별이 빛나는 기도: 기도 요청 및 감사 나눔',
@@ -114,14 +98,12 @@ export default function Results() {
       award: '3등',
     },
     {
-      no: 12,
       name: '장원찬',
       dept: '청장년부 부장',
       title: '청장년부 맞춤형 홈페이지',
       summary: '긴 설교를 짧은 영상과 텍스트로 요약, 맞춤형 자료실, 소그룹 스마트 출결',
     },
     {
-      no: 13,
       name: '장원찬',
       dept: '청장년부 부장',
       title: '일대일 제자양육: 성경 암송(듣기 및 퀴즈, 관리)',
@@ -130,7 +112,7 @@ export default function Results() {
   ];
 
   const showcases = [
-    { name: '포도 - 교회나눔터', participant: '김택훈', url: 'https://ds-ai-sharing.vercel.app/' },
+    { name: '포도 - 교회나눔터', participant: '김택훈', url: 'https://ds-ai-sharing.verycloud.app/' },
     { name: '일대일제자양육 성경암송', participant: '장원찬', url: '' },
     { name: '동숭교회 사용설명서', participant: '마진수, 김예은', url: '' },
     { name: '릴레이 성경녹음', participant: '이성실', url: '' },
@@ -266,10 +248,10 @@ export default function Results() {
                 </tr>
               </thead>
               <tbody>
-                {entries.map((entry) => (
-                  <tr key={entry.no}>
+                {entries.map((entry, idx) => (
+                  <tr key={idx}>
                     <td style={{ textAlign: 'center', fontWeight: 700, color: 'var(--color-text-muted)' }}>
-                      {entry.no}
+                      {idx + 1}
                     </td>
                     <td>
                       <div style={{ fontWeight: 700, color: 'var(--color-primary-dark)' }}>{entry.name}</div>
@@ -281,8 +263,48 @@ export default function Results() {
                     </td>
                     <td>
                       <div style={{ fontWeight: 700, color: 'var(--color-text-main)', lineHeight: 1.45 }}>
-                        {entry.title}
+                        {entry.url ? (
+                          <a
+                            href={entry.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '6px',
+                              color: 'var(--color-primary)',
+                              fontWeight: 700,
+                            }}
+                          >
+                            {entry.title}
+                            <ExternalLink size={16} />
+                          </a>
+                        ) : (
+                          entry.title
+                        )}
                       </div>
+                      {entry.url && (
+                        <div style={{ marginTop: '6px' }}>
+                          <a
+                            href={entry.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              padding: '3px 10px',
+                              borderRadius: '9999px',
+                              fontSize: '0.78rem',
+                              fontWeight: 700,
+                              background: 'rgba(15, 76, 129, 0.1)',
+                              color: 'var(--color-primary)',
+                            }}
+                          >
+                            바로 열기 <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
                       {entry.award && (
                         <span
                           style={{
